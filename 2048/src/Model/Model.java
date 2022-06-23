@@ -54,26 +54,6 @@ public class Model {
         return emptyTiles.get(random.nextInt(emptyTiles.size()));
     }
 
-    private boolean isGameOver() {
-        /*
-        Returns true if the game is over. The game is over if the board is full and ifthe board cannot be swiped inany directions.
-         */
-
-        // check if board is full
-        for(int row = 0; row < this.board.length; row++) {
-            for(int col = 0; col < this.board[row].length; col++) {
-                if(this.board[row][col] == 0) {
-                    return false;
-                }
-            }
-        }
-
-        // check if valid move exists on full board
-
-
-        return true;
-    }
-
     private List<Integer> shift(List<Integer> list) {
         /*
         Removes all zeros from list and merges elements.
