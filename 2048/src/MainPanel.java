@@ -3,6 +3,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.GridLayout;
 
 public class MainPanel extends JPanel {
@@ -36,6 +37,7 @@ public class MainPanel extends JPanel {
                     this.board[row][col].setText("");
                 }
                 this.board[row][col].setHorizontalAlignment(SwingConstants.CENTER);
+                this.board[row][col].setFont(new Font("Comic Sans", Font.BOLD, 30));
                 
                 switch(board[row][col]) {
                     case 0: 
